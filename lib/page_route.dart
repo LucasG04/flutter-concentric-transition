@@ -101,7 +101,10 @@ class _FadeInPageTransition extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: ClipPath(
-        clipper: ConcentricClipper(progress: _opacityAnimation.value, radius: 0.0 - 1.0),
+        clipper: ConcentricClipper(
+          progress: _opacityAnimation.value,
+          radius: 0.0 - 1.0,
+        ),
         child: child,
       ),
     );
